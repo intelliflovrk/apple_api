@@ -5,7 +5,7 @@ drink = ['milk', 'water', 'juice']
 #T1
 def what_is_the_item(item):
     """ Write a function here that print what kind of item is given from the above lists.
-    Example: if 'apple' given then it should print 'Its a Fruit' """
+    Example: if 'apple' given then it should print 'apple is a fruit.' """
 
 #T2
 def merge_list(list1, list2, list3):
