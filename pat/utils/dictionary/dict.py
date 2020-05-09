@@ -10,7 +10,7 @@ def general_dict(food_name):
         print("JSON file saved on local to use")
     for item, food in dictionary.items(): 
         if food == food_name:
-            print(item)
+            print("User entered " + food_name, "it's stored in " + item)
 
 # Function called for testing
 general_dict(search_food_1)
@@ -24,6 +24,6 @@ def load_json(some_value):
         print(data_store)
         for item, food in data_store.items(): 
             if food == some_value:
-                print(item)        
+                print("User entered " + some_vaule, " it's stored in " + item)        
 
 load_json(search_food_2)
