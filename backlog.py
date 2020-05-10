@@ -3,21 +3,29 @@ veg = ['carrot', 'beans', 'potato']
 drink = ['milk', 'water', 'juice']
 
 #T1
-def what_is_the_item(item):
-    """ Write a function here that print what kind of item is given from the above lists.
-    Example: if 'apple' given then it should print 'Its a Fruit' """
+""" Create a function here that print what kind of item is given from the above lists.
+Example: if 'apple' given then it should print 'apple is a fruit.' """
+
 
 #T2
-def merge_list(list1, list2, list3):
-    """Write a function which accepts 3 lists and return a new list called 'food' with
-    combined all items from given lists."""
+"""Create a function that accepts unlimited lists and return a new_list with
+all combined items from given lists(params)."""
+
 
 #T3
-"""Create a function which accepts a params, and returns key name where the value(params) is present 
-by parsing the json file(food.json). Please find the attached sample json file."""
+"""Create a function which accepts a parameter(only string) and print its key where the 
+value is present by parsing the json file(food.json). 
+Example: if "milk" is given then it should print "milk is located in item4" 
+Please find the attached sample json file."""
 
+#T4
+"""Write a Python function that accepts a string and calculate the 
+number of upper case letters and lower case letters. Go to the editor
+Sample String : 'Raj Playing COD'
+Expected Output :
+No. of Upper case characters : 5
+No. of Lower case Characters : 8 """
 
-
-
-
+#T5
+"""Create a python script for BigBank user to manage current account using BigBank.png flowchart."""
 
