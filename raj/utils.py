@@ -1,3 +1,6 @@
+import json
+import re
+
 fruit = ["apple", "banana", "mango"]
 vegetable = ['carrot', 'beans', 'potato']
 drink = ['milk', 'water', 'juice']
@@ -28,3 +31,18 @@ def merge_lists(*args):
         else:
             print("Warning: One or more parameter is not a python list.")
     print("new_list =", list(set(new_list)))
+
+
+#T3
+def find_key(my_value):
+    """ This method will find key of a given value from food.json."""
+    with open('food.json') as file:
+        data_dict = json.load(file)
+    item = re.search(f'("\w+": )("{my_value}")', json.dumps(data_dict))
+    if item:
+        print(my_value, "located in", item.group(0).split(':')[0].replace('"', ""))
+    else: print("item not found")
+
+
+
+
