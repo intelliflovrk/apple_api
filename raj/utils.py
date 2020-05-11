@@ -36,13 +36,10 @@ def merge_lists(*args):
 #T3
 def find_key(my_value):
     """ This method will find key of a given value from food.json."""
-    with open('food.json') as file:
+    with open('../food.json') as file:
         data_dict = json.load(file)
     item = re.search(f'("\w+": )("{my_value}")', json.dumps(data_dict))
     if item:
         print(my_value, "located in", item.group(0).split(':')[0].replace('"', ""))
     else: print("item not found")
-
-
-
 
